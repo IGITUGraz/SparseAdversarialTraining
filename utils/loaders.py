@@ -60,9 +60,6 @@ def model_loader(args):
     elif args.model == "resnet50":
         model = SparseResNet50(num_classes=args.n_classes, p_global=args.connectivity) if args.sparse_train \
             else ResNet50(num_classes=args.n_classes)
-    elif args.model == "resnet101":
-        model = SparseResNet101(num_classes=args.n_classes, p_global=args.connectivity) if args.sparse_train \
-            else ResNet101(num_classes=args.n_classes)
     elif args.model == "wrn28_2":
         model = SparseWideResNet28_2(num_classes=args.n_classes, p_global=args.connectivity) if args.sparse_train \
             else WideResNet28_2(num_classes=args.n_classes)

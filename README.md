@@ -21,7 +21,7 @@ to install all dependencies and use the repository.
 You can use `run_connectivity_sampling.py` to adversarially train sparse networks from scratch. Brief description of possible arguments are:
 
 - `--data`: "cifar10", "cifar100", "svhn"
-- `--model`: "vgg16", "resnet18", "resnet34", "resnet50", "resnet101", "wrn28_2", "wrn28_4", "wrn28_10", "wrn34_10"
+- `--model`: "vgg16", "resnet18", "resnet34", "resnet50", "wrn28_2", "wrn28_4", "wrn28_10", "wrn34_10"
 - `--objective`: "at" (Standard AT), "mat" (Mixed-batch AT), trades", "mart", "rst" (intended for use on CIFAR-10)
 - `--sparse_train`: enable end-to-end sparse training
 - `--connectivity`: sparse connectivity ratio (used when `--sparse_train` is enabled)

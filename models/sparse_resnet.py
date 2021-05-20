@@ -199,7 +199,3 @@ def SparseResNet34(**kwargs):
 
 def SparseResNet50(**kwargs):
     return SparseResNet(SparseBottleneck, [3, 4, 6, 3], name='resnet50', **kwargs)
-
-
-def SparseResNet101(**kwargs):
-    return SparseResNet(SparseBottleneck, [3, 4, 23, 3], name='resnet101', **kwargs)

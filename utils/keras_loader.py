@@ -35,8 +35,6 @@ def net(arch='vgg16', n_classes=10):
         model = resnet34(n_classes)
     elif arch == 'resnet50':
         model = resnet50(n_classes)
-    elif arch == 'resnet101':
-        model = resnet101(n_classes)
     elif arch == 'wrn28_2':
         model = wideresnet28_2(n_classes)
     elif arch == 'wrn28_4':
@@ -82,11 +80,6 @@ def resnet34(num_classes):
 
 def resnet50(num_classes):
     model = resnet(num_classes, 'bottleneck', [3, 4, 6, 3])
-    return model
-
-
-def resnet101(num_classes):
-    model = resnet(num_classes, 'bottleneck', [3, 4, 23, 3])
     return model
 
 
