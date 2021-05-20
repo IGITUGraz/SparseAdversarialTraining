@@ -73,7 +73,7 @@ If you use this code or models in your research and find it helpful, please cite
 ```
 @inproceedings{ozdenizci2021icml,
   title={Training adversarially robust sparse networks via Bayesian connectivity sampling},
-  author={Ozan \"{O}zdenizci, Robert Legenstein},
+  author={Ozan \"{O}zdenizci and Robert Legenstein},
   booktitle={International Conference on Machine Learning},
   year={2021},
   organization={PMLR}
