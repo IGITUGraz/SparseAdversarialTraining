@@ -34,8 +34,8 @@ Remarks:
 
 The following sample scripts can be used to adversarially train sparse networks from scratch, and also perform white box robustness evaluations using PGD attacks via [Foolbox](https://github.com/bethgelab/foolbox).
 
-- `robust_sparse_train_standardAT.sh`: Standard adversarial training for sparse ResNet-50 models on CIFAR-10.
-- `robust_sparse_train_TRADES.sh` Robust training with TRADES loss for sparse VGG-16 models on CIFAR-100.
+- `robust_sparse_train_standardAT.sh`: Standard adversarial training for a sparse ResNet-50 on CIFAR-10.
+- `robust_sparse_train_TRADES.sh` Robust training with TRADES for a sparse VGG-16 on CIFAR-100.
 
 ## Saved model weights
 
