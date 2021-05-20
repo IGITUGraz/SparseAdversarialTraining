@@ -62,7 +62,7 @@ These sparse models trained with standard AT on CIFAR-10 (without additional pse
 Originally we store the learned model weights in pickle dictionaries, however to enable benchmark evaluations on [Foolbox](https://github.com/bethgelab/foolbox) and [AutoAttack](https://github.com/fra31/auto-attack) we convert and load these saved dictionary of weights into equivalent Keras models for compatibility. 
 
 Consider the last pickle file above that corresponds to the ResNet-50 model weights at 99% sparsity trained via Standard AT on CIFAR-10. 
-Place this file in the following directory: `results/cifar10/resnet50/sparse1_at_best_weights.pickle`.
+Place this file such that the following directory can be accessed: `results/cifar10/resnet50/sparse1_at_best_weights.pickle`.
 You can simply use `run_foolbox_eval.py` to load these network weights into Keras models and evaluate robustness against PGD<sup>50</sup> attacks as follows:
 ```bash
 python run_foolbox_eval.py --data "cifar10" --n_classes 10 --model "resnet50" --objective "at" --sparse_train --connectivity 0.01 --pgd_iters 50 --pgd_restarts 10
