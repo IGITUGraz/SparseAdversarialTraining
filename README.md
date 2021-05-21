@@ -6,7 +6,7 @@ This is the code repository of the following paper for end-to-end robust adversa
 <em>Ozan Özdenizci, Robert Legenstein</em>\
 International Conference on Machine Learning (ICML), 2021.
 
-Currently the repository supports sparse training of models with the robust training objectives presented in the paper, as well as saved model weights of the adversarially trained sparse networks with our method.
+Currently the repository supports sparse training of models with the robust training objectives presented in the paper, as well as saved model weights of the adversarially trained sparse networks that are presented.
 
 ## Setup
 
@@ -22,7 +22,7 @@ You can use `run_connectivity_sampling.py` to adversarially train sparse network
 
 - `--data`: "cifar10", "cifar100", "svhn"
 - `--model`: "vgg16", "resnet18", "resnet34", "resnet50", "wrn28_2", "wrn28_4", "wrn28_10", "wrn34_10"
-- `--objective`: "at" (Standard AT), "mat" (Mixed-batch AT), trades", "mart", "rst" (intended for use on CIFAR-10)
+- `--objective`: "at" (Standard AT), "mat" (Mixed-batch AT), trades", "mart", "rst" (intended for CIFAR-10)
 - `--sparse_train`: enable end-to-end sparse training
 - `--connectivity`: sparse connectivity ratio (used when `--sparse_train` is enabled)
 
@@ -44,18 +44,30 @@ Different evaluations may naturally result in slight differences in the numbers 
 
 ### Sparse networks with TRADES robust training objective
 
-* CIFAR-10  (TRADES with RST): [VGG16 - 90% Sparsity](https://www.dropbox.com/...) | [VGG16 - 99% Sparsity](https://www.dropbox.com/...)
-* CIFAR-100 (TRADES): [ResNet-18 - 90% Sparsity](https://www.dropbox.com/...) | [ResNet-18 - 99% Sparsity](https://www.dropbox.com/...)
-* SVHN   (TRADES): [WideResNet-28-4 - 90% Sparsity](https://www.dropbox.com/...) | [WideResNet-28-4 - 99% Sparsity](https://www.dropbox.com/...)
+* CIFAR-10  (TRADES with RST): 
+[VGG16 - 90% Sparsity](https://igi-web.tugraz.at/download/OzdenizciLegensteinICML2021/cifar10_vgg16_sparse10_rst.zip) | 
+[VGG16 - 99% Sparsity](https://igi-web.tugraz.at/download/OzdenizciLegensteinICML2021/cifar10_vgg16_sparse1_rst.zip)
+* CIFAR-100 (TRADES): 
+[ResNet-18 - 90% Sparsity](https://igi-web.tugraz.at/download/OzdenizciLegensteinICML2021/cifar100_resnet18_sparse10_trades.zip) | 
+[ResNet-18 - 99% Sparsity](https://igi-web.tugraz.at/download/OzdenizciLegensteinICML2021/cifar100_resnet18_sparse1_trades.zip)
+* SVHN   (TRADES): 
+[WideResNet-28-4 - 90% Sparsity](https://igi-web.tugraz.at/download/OzdenizciLegensteinICML2021/svhn_wrn28_4_sparse10_trades.zip) | 
+[WideResNet-28-4 - 99% Sparsity](https://igi-web.tugraz.at/download/OzdenizciLegensteinICML2021/svhn_wrn28_4_sparse1_trades.zip)
 
 ### Sparse networks with Standard AT for CIFAR-10
 
 These sparse models trained with standard AT on CIFAR-10 (without additional pseudo-labeled images) that correspond to our models presented in Figure 1 and Table 4 of the paper.
 
-* VGG16      : [90% Sparsity](https://www.dropbox.com/...) | [99% Sparsity](https://www.dropbox.com/...) | [99.5% Sparsity](https://www.dropbox.com/...)
-* ResNet-18  : [99% Sparsity](https://www.dropbox.com/...)
-* ResNet-34  : [99% Sparsity](https://www.dropbox.com/...)
-* ResNet-50  : [99% Sparsity](https://www.dropbox.com/...)
+* VGG16      : 
+[90% Sparsity](https://igi-web.tugraz.at/download/OzdenizciLegensteinICML2021/cifar10_vgg16_sparse10_at.zip) | 
+[99% Sparsity](https://igi-web.tugraz.at/download/OzdenizciLegensteinICML2021/cifar10_vgg16_sparse1_at.zip) | 
+[99.5% Sparsity](https://igi-web.tugraz.at/download/OzdenizciLegensteinICML2021/cifar10_vgg16_sparse05_at.zip)
+* ResNet-18  : 
+[99% Sparsity](https://igi-web.tugraz.at/download/OzdenizciLegensteinICML2021/cifar10_resnet18_sparse1_at.zip)
+* ResNet-34  : 
+[99% Sparsity](https://igi-web.tugraz.at/download/OzdenizciLegensteinICML2021/cifar10_resnet34_sparse1_at.zip)
+* ResNet-50  : 
+[99% Sparsity](https://igi-web.tugraz.at/download/OzdenizciLegensteinICML2021/cifar10_resnet50_sparse1_at.zip)
 
 #### An example on how to evaluate saved model weights
 
@@ -88,8 +100,8 @@ This work is also partially supported by the Austrian Science Fund (FWF) within 
 
 Parts of this code repository is based on the following works by the machine learning community.
 
+* https://github.com/guillaumeBellec/deep_rewiring
 * https://github.com/inspire-group/hydra
 * https://github.com/yaodongyu/TRADES
 * https://github.com/YisenWang/MART
 * https://github.com/yaircarmon/semisup-adv
-* https://github.com/guillaumeBellec/deep_rewiring
