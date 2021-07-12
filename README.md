@@ -1,10 +1,10 @@
 # Training Adversarially Robust Sparse Networks via Bayesian Connectivity Sampling
 
-This is the code repository of the following paper for end-to-end robust adversarial training of neural networks with sparse connectivity.
+This is the code repository of the following [paper](http://proceedings.mlr.press/v139/ozdenizci21a/ozdenizci21a.pdf) for end-to-end robust adversarial training of neural networks with sparse connectivity.
  
 "Training Adversarially Robust Sparse Networks via Bayesian Connectivity Sampling"\
 <em>Ozan Özdenizci, Robert Legenstein</em>\
-International Conference on Machine Learning (ICML), 2021.
+International Conference on Machine Learning (ICML), 2021.\
 
 Currently the repository supports sparse training of models with the robust training objectives presented in the paper, as well as saved model weights of the adversarially trained sparse networks that are presented.
 
