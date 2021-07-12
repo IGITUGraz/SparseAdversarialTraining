@@ -87,6 +87,7 @@ If you use this code or models in your research and find it helpful, please cite
   title={Training adversarially robust sparse networks via Bayesian connectivity sampling},
   author={Ozan \"{O}zdenizci and Robert Legenstein},
   booktitle={International Conference on Machine Learning},
+  pages={8314--8324},
   year={2021},
   organization={PMLR}
 }
